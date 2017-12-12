@@ -1,0 +1,9 @@
+curl https://api.omise.co/charges \
+  -X POST \
+  -u skey_test_5a9k2grxwayf1d8c2e4: \
+  -d "description=Charge for order INV1701001" \
+  -d "amount=100000" \
+  -d "currency=thb" \
+  -d "return_uri=http://www.example.com/orders/INV0701001/complete" \
+  -d "customer=customer_id" \
+  -d "card=card_id"
